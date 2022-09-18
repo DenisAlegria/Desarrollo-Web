@@ -1,27 +1,31 @@
-# Proyecto
+# Proyecto Desarrollo Web
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+Este es el codigo del proyecto de Desarrollo Web, aca se subiran actualizaciones grupales sobre el proyecto final.
+El proyecto es basicamente un e-commerce donde el usuario podra realizar compras de diferentes productos cargados por un administrador en una BD de MySQL que mas adelante estaremos cargando y consultando con Spring.
 
-## Development server
+## Requisitos para ejecutar el proyecto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Angular 14, NodeJS 16 LTS
 
-## Code scaffolding
+## Integrantes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Jose Flavio Dardon Segura 3190-10-14248
+* Doullier Emmanuel Carrera Gómez 3190-09-1743
+* Denis Jose Alegria 3190-18-3240
 
-## Build
+## FrontEnd
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Imagenes de la ejecucion de la app
 
-## Running unit tests
+*Login
+![image](https://user-images.githubusercontent.com/82725198/183257176-b64d1df0-a2b0-4c18-b983-43abd3af7972.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+*Home
+Listado de compras activas, entregadas y canceladas por los usuarios
+![image](https://user-images.githubusercontent.com/82725198/183257521-44110387-dc5c-4314-b92d-c7e5b2e263dd.png)
 
-## Running end-to-end tests
+*Detalle de Compras activas y despachadas
+![image](https://user-images.githubusercontent.com/82725198/183257599-cdc28adf-56a9-47db-996e-ee3862c62e5e.png)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+*Detalle de compras canceladas
+![image](https://user-images.githubusercontent.com/82725198/183257627-aa473835-c36e-44c6-9607-d86a5dbeb08f.png)
