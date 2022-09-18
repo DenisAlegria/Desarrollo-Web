@@ -24,14 +24,14 @@ export class LoginComponent implements OnInit {
     if(this.usuario != null){
       location.href = "/home";
     }
-    /*let formulario: any = document.getElementById("login");
+    let formulario: any = document.getElementById("login");
     let formularioValido: boolean = formulario.reportValidity();
     if (formularioValido) {
       this.loading = true;
       this.loginService().subscribe(
         data => this.iniciarSesion(data)
       )
-    }*/
+    }
   }
 
   iniciarSesion(resultado: any) {
