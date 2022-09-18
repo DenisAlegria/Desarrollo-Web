@@ -17,13 +17,10 @@ export class LoginComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    console.log(localStorage.getItem("usuario"))
   }
 
   Login() {
-    this.loading = true;
-    if(this.usuario != null){
-      location.href = "/home";
-    }
     let formulario: any = document.getElementById("login");
     let formularioValido: boolean = formulario.reportValidity();
     if (formularioValido) {
@@ -36,6 +33,7 @@ export class LoginComponent implements OnInit {
 
   iniciarSesion(resultado: any) {
     this.loading = false;
+    console.log(resultado)
     if (resultado) {
       localStorage.setItem("usuario", JSON.stringify(resultado));
       if (resultado.rol_idrol==1) {
