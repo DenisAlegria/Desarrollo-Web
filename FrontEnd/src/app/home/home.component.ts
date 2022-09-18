@@ -22,14 +22,15 @@ export class HomeComponent implements OnInit {
   constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
-    /*this.usuario = JSON.parse(localStorage.getItem("usuario"));
+    this.usuario = JSON.parse(localStorage.getItem("usuario"));
     if(!this.usuario){
       location.href = "/"
     }else{
       this.cliente = {idcorreo:this.usuario.correo,direccionClienteList:[],telefonoClienteList:[]};
       this.buscarClientes();
       this.buscarCompras();
-    }*/
+    }
+    console.log(this.usuario)
   }
 
   logout(){
