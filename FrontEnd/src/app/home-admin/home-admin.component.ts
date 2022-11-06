@@ -60,7 +60,7 @@ export class HomeAdminComponent implements OnInit {
   }
 
 buscarProductosServicio():Observable<any>{
-  return this.http.get<any>("http://localhost:3030/producto/buscar")//.pipe(
+  return this.http.get<any>("http://localhost:8091/api/producto/buscar")//.pipe(
     //catchError(e=>"error"))
 }
 
@@ -100,7 +100,7 @@ productoServicio(){
         'Content-Type': 'application/json'
       })
   }
-  return this.http.post<any>("http://localhost:3030/producto/guardar", this.producto, httpOptions);
+  return this.http.post<any>("http://localhost:8091/api/producto/guardar", this.producto, httpOptions);
   }
 
 
@@ -114,7 +114,7 @@ productoServicio(){
   }
 
 buscarAnunciosServicio():Observable<any>{
-  return this.http.get<any>("http://localhost:3030/anuncio/buscar")//.pipe(
+  return this.http.get<any>("http://localhost:8091/api/anuncio/buscar")//.pipe(
     //catchError(e=>"error"))
 }
 
@@ -154,7 +154,7 @@ anuncioServicio(){
         'Content-Type': 'application/json'
       })
   }
-  return this.http.post<any>("http://localhost:3030/anuncio/guardar", this.anuncio, httpOptions);
+  return this.http.post<any>("http://localhost:8091/api/anuncio/guardar", this.anuncio, httpOptions);
   }
 
 //USUARIOS//
@@ -167,7 +167,7 @@ anuncioServicio(){
   }
 
 buscarUsuariosServicio():Observable<any>{
-  return this.http.get<any>("http://localhost:3030/usuario/buscar")//.pipe(
+  return this.http.get<any>("http://localhost:8091/api/usuario/buscar")//.pipe(
     //catchError(e=>"error"))
 }
 
@@ -208,7 +208,7 @@ usuarioServicio(){
         'Content-Type': 'application/json'
       })
   }
-  return this.http.post<any>("http://localhost:3030/usuario/guardar", this.usr, httpOptions);
+  return this.http.post<any>("http://localhost:8091/api/usuario/guardar", this.usr, httpOptions);
   }
 
 agregarTelefonoE(){
@@ -237,7 +237,7 @@ buscarCompras(){
 }
 
 buscarComprasServicio():Observable<any>{
-return this.http.get<any>("http://localhost:3030/compra/buscar")//.pipe(
+return this.http.get<any>("http://localhost:8091/api/compra/buscar")//.pipe(
   //catchError(e=>"error"))
 }
 

@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit {
   }
 
 buscarClientesServicio():Observable<any>{
-  return this.http.get<any>("http://localhost:3030/cliente/buscar/")//.pipe(
+  return this.http.get<any>("http://localhost:8091/api/cliente/buscar/")//.pipe(
    // catchError(e=>"error"))
 }
 
@@ -86,7 +86,7 @@ clienteServicio(){
         'Content-Type': 'application/json'
       })
   }
-  return this.http.post<any>("http://localhost:3030/cliente/guardar", this.cliente, httpOptions);
+  return this.http.post<any>("http://localhost:8091/api/cliente/guardar", this.cliente, httpOptions);
   }
 
 agregarTelefono(){
@@ -113,7 +113,7 @@ borrarDireccion(direccion:any){
   }
   
   buscarComprasServicio():Observable<any>{
-  return this.http.get<any>("http://localhost:3030/compra/buscar")//.pipe(
+  return this.http.get<any>("http://localhost:8091/api/compra/buscar")//.pipe(
     //catchError(e=>"error"))
   }
   

@@ -45,7 +45,7 @@ export class DetalleComprasADComponent implements OnInit {
   }
   
   buscarComprasServicio():Observable<any>{
-  return this.http.get<any>("http://localhost:3030/compra/buscar")//.pipe(
+  return this.http.get<any>("http://localhost:8091/api/compra/buscar")//.pipe(
     //catchError(e=>"error"))
   }
   
